@@ -1,0 +1,13 @@
+{
+  "name": "テスト拡張機能",
+  "description": "作ってみた",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "run_at": "document_end",
+      "js": ["./main.js"]
+    }
+  ]
+}
